@@ -59,9 +59,9 @@
             <script defer>
                 var typed = new Typed('.typing', {
                     strings : [
-                        'web Designer',
-                        'web Developer',
-                        'Application Engineer'
+                        'Application Engineer',
+                        'Web Designer',
+                        'Web Developer'
                     ],
                     typeSpeed : 100,
                     BackSpeed : 600,

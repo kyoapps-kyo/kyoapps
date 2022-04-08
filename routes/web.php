@@ -25,6 +25,9 @@ Route::get('/about', function () {
 Route::get('/services', function () {
     return view('pages.services');
 })->name('services');
+Route::get('/portfolio', function () {
+    return view('pages.portfolio');
+})->name('portfolio');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
