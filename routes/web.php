@@ -14,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.root');
 });
-
+Route::get('/videos', function () {
+    return view('pages.videos');
+})->name('videos');
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
+Route::get('/services', function () {
+    return view('pages.services');
+})->name('services');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

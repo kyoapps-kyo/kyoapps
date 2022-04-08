@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+</head>
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
+<body class="font-sans antialiased">
+
+    <div class="bg-base-200 flex w-full">
+        <div class="flex flex-col min-h-screen 2xl:w-1/3 w-1/4">
+            <div class="h-40 px-4 sm:px-6 lg:px-8 flex items-center justify-end">
+                <div class="w-60">
+                    <a href="{{ route('dashboard') }}">
+                        <x-application-logo />
+                    </a>
                 </div>
-            </header>
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            </div>
+            <aside class="grow">
+                {{$aside}}
+            </aside>
+            <div class="bg-neutral h-14 opacity-80">
+                <footer class="footer place-items-end items-center p-4 h-full bg-neutral text-neutral-content">
+                    <div class="items-center grid-flow-col">
+                        <p>Copyright © 2022 - All right reserved </p>
+                    </div>
+                </footer>
+            </div>
         </div>
-    </body>
+        <div class=" grow flex flex-col min-h-screen bg-base-300">
+            @include('layouts.navigation')
+            <main class="grow">
+                {{$slot}}
+            </main>
+            @include('layouts.footer')
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}"></script>
+    @if(isset($myScript))
+        {{ $myScript }}
+    @endif
+</body>
+
 </html>
