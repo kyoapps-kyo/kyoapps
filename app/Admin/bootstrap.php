@@ -24,3 +24,6 @@ use Dcat\Admin\Show;
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
+app('view')->prependNamespace('admin', resource_path('views/admin'));
+Admin::js('https://cdn.jsdelivr.net/npm/typed.js@2.0.12');
+// Form\Field\Map::requireAssets();
