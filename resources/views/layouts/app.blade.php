@@ -10,7 +10,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
+    @livewireStyles
 </head>
 
 <body class="font-sans antialiased">
@@ -30,7 +30,7 @@
             <div class="bg-neutral h-14 opacity-80">
                 <footer class="footer place-items-end items-center p-4 h-full bg-neutral text-neutral-content">
                     <div class="items-center grid-flow-col">
-                        <p>Copyright © 2022 - All right reserved </p>
+                        <p>KYO APPLICATIONS © 2022 - All right reserved </p>
                     </div>
                 </footer>
             </div>
@@ -44,6 +44,7 @@
         </div>
     </div>
     <!-- Scripts -->
+    @livewireScripts
     <script src="{{ mix('js/app.js') }}"></script>
     @if(isset($myScript))
         {{ $myScript }}
