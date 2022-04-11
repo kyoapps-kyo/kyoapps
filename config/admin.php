@@ -1,5 +1,4 @@
 <?php
-use Illuminate\Support\Facades\App;
 return [
 
     /*
@@ -11,7 +10,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Dcat Admin',
+    'name' => 'KYO APPLICATIONS',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +21,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<img src="/vendor/dcat-admin/images/logo.png" width="35"> &nbsp;Dcat Admin',
+    'logo' => '<img src="/assets/logo.gif" width="35"> &nbsp;KYO APPLICATIONS',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +95,7 @@ return [
     | Html title for all pages.
     |
     */
-    'title' => 'Admin',
+    'title' => 'KYO APPS',
 
     /*
     |--------------------------------------------------------------------------
@@ -200,7 +199,7 @@ return [
     |--------------------------------------------------------------------------
     */
     'helpers' => [
-        'enable' => true,
+        'enable' => isLocal(),
     ],
 
     /*
