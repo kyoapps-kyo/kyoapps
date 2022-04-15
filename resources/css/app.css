@@ -7,3 +7,7 @@
 .Allura {
     font-family: 'Allura', cursive;
 }
+
+.text-stroke{
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
