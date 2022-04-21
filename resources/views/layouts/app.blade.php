@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
 <head>
     <!-- Google Tag Manager -->
@@ -32,7 +32,7 @@
         <div class="flex flex-col min-h-screen 2xl:w-1/3 w-1/4">
             <div class="h-40 px-4 sm:px-6 lg:px-8 flex items-center justify-end">
                 <div class="w-60">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ url('/') }}">
                         <x-application-logo />
                     </a>
                 </div>

@@ -41,7 +41,7 @@
         </div>
         </x-slot>
         <div class="max-w-7xl px-4 pt-2 pb-6 sm:px-6 lg:px-8 h-full">
-            <div class="hero h-full" style="background-image: url(https://api.lorem.space/image/fashion?);">
+            <div class="hero h-full" style="background-image: url(https://api.lorem.space/image/movie?);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-xl">

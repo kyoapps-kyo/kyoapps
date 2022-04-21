@@ -2,9 +2,10 @@
     <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
         <footer class="footer items-center p-4 bg-neutral text-neutral-content  h-15">
             <div class="items-center grid-flow-col">
-                <p>Design&Code by kyo</p>
+                <p>Design&Code by kyo </p>
             </div>
-            <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end flex items-center">
+                <p><a href="https://beian.miit.gov.cn">京ICP备2022011418号</a></p>
                 <a>
                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                         class="fill-current">
